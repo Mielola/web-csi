@@ -1,7 +1,7 @@
 @extends('layouts.app')
 <style>
   .bg {
-    background-image: url('{{ asset('images/background.png') }}');
+    background-image: url('{{ asset(' images/background.png') }}');
   }
 </style>
 @section('title', 'Home')
@@ -31,38 +31,40 @@
 </section>
 
 <section class="h-fit flex justify-center items-center p-4 sm:p-20">
-  <div class="bg-[#427EBD] text-white p-10 rounded-md flex flex-col lg:flex-row items-start justify-evenly">
-   <div>
-
-   </div>
-  <div class="grid grid-cols-2 gap-4 p-4 lg:w-1/2">
-      <!-- Gambar pertama (besar, vertikal) -->
-      <div class="row-span-2">
-        <img src="{{ asset('images/image (5).png') }}" alt="Image 1" class="w-full h-full object-cover rounded-lg shadow-md" />
+  <div class="bg-[#427EBD] text-white p-4 sm:p-10 rounded-md flex flex-col lg:flex-row items-start justify-evenly gap-8">
+    <!-- Gallery Section -->
+    <div class="w-full lg:w-1/2">
+      <!-- Top Row -->
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <div class="h-full">
+          <img src="{{ asset('images/image (5).png') }}" alt="Image 1"
+            class="w-full h-[400px] sm:h-[500px] object-cover rounded-lg shadow-md" />
+        </div>
+        <div class="flex flex-col gap-4">
+          <img src="{{ asset('images/image (4).png') }}" alt="Image 2"
+            class="w-full h-[190px] sm:h-[240px] object-cover rounded-lg shadow-md" />
+          <img src="{{ asset('images/image (3).png') }}" alt="Image 3"
+            class="w-full h-[190px] sm:h-[240px] object-cover rounded-lg shadow-md" />
+        </div>
       </div>
 
-      <!-- Gambar kedua -->
-      <div class="flex flex-col row-span-2 gap-4 h-full justify-between">
-        <img src="{{ asset('images/image (4).png') }}" alt="Image 2" class="h-full w-full object-cover rounded-lg shadow-md" />
-        <img src="{{ asset('images/image (3).png') }}" alt="Image 3" class="w-full h-full object-cover rounded-lg shadow-md" />
+      <!-- Bottom Row -->
+      <div class="grid grid-cols-2 gap-4">
+        <img src="{{ asset('images/image (2).png') }}" alt="Image 4"
+          class="w-full h-[180px] object-cover rounded-lg shadow-md" />
+        <img src="{{ asset('images/image (1).png') }}" alt="Image 5"
+          class="w-full h-[180px] object-cover rounded-lg shadow-md" />
       </div>
-
-
-
     </div>
 
-   
-
-    <div class="w-full lg:w-1/3">
-      <h1 class="font-bold text-5xl">Company Profile</h1>
-      <br>
-      <div class="flex flex-col justify-around text-xl text-justify">
+    <!-- Text Content -->
+    <div class="w-full lg:w-1/3 mt-6 lg:mt-0">
+      <h1 class="font-bold text-3xl sm:text-5xl">Company Profile</h1>
+      <div class="flex flex-col gap-6 mt-6 text-base sm:text-xl text-justify">
         <p>PT Cryo Services Indonesia (CSI) is your most reliable partner in the industry
           of cryogenic engineering and repair in Indonesia. CSI was founded in 2008 by a group
           of people with strong technical background in cryogenic and industrial gases applications.
         </p>
-        <br>
-        <br>
         <p>Our main activities are mainly in cryogenic tanks and equipment repairs; engineering and
           installation of cryogenic supply system including tank storages and regassification units,
           low to high pressure pipe works and pressure regulating system; fabrication of cylinder manifold/cradle/cascade;
