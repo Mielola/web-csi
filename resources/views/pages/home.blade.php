@@ -1,7 +1,7 @@
 @extends('layouts.app')
 <style>
   .bg {
-    background-image: url('{{ asset(' images/background.png') }}');
+    background-image: url('{{ asset('images/background.png') }}');
   }
 </style>
 @section('title', 'Home')
