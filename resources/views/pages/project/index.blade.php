@@ -31,7 +31,7 @@
                         Main Contractor: Tripatra-Samsung Consortium
                     </p>
                 </div>
-                <a href="projects/detail">
+                <a href="projects/detail-1">
                     <div class="w-max mt-4 bg-white flex p-4 gap-4 items-center transition duration-300 hover:bg-gray-200">
                         <p class="text-gray-700 font-light">Read More</p>
                         <img class="h-4 md:h-auto" src="{{ asset('images/arrow.svg') }}" alt="">
@@ -49,7 +49,7 @@
                 <div>
                     <p class="text-2xl md:text-3xl font-bold text-white">Installation of Liquid Oxygen Tank at Hospitals</p>
                 </div>
-                <a href="projects/detail">
+                <a href="projects/detail-2">
                     <div class="w-max mt-4 bg-white flex p-4 gap-4 items-center transition duration-300 hover:bg-gray-200">
                         <p class="text-gray-700 font-light">Read More</p>
                         <img class="h-4 md:h-auto" src="{{ asset('images/arrow.svg') }}" alt="">
@@ -72,7 +72,7 @@
                         Contractor : Kayan LNG
                     </p>
                 </div>
-                <a href="projects/detail">
+                <a href="projects/detail-3">
                     <div class="w-max mt-4 bg-white flex p-4 gap-4 items-center transition duration-300 hover:bg-gray-200">
                         <p class="text-gray-700 font-light">Read More</p>
                         <img class="h-4 md:h-auto" src="{{ asset('images/arrow.svg') }}" alt="">
