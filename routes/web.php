@@ -14,9 +14,18 @@ Route::get('/projects', function () {
     return view('pages.project.index');
 })->name('projects');
 
-Route::get('/projects/detail', function () {
-    return view('pages.project.detail');
-})->name('/projects/detail');
+Route::get('/projects/detail-3', function () {
+    return view('pages.project.detail3');
+})->name('/projects/detail3');
+
+Route::get('/projects/detail-2', function () {
+    return view('pages.project.detail2');
+})->name('/projects/detail2');
+
+
+Route::get('/projects/detail-1', function () {
+    return view('pages.project.detail1');
+})->name('/projects/detail1');
 
 
 Route::get('/services', function () {
@@ -26,3 +35,8 @@ Route::get('/services', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 })->name('contact');
+
+
+Route::get('/agency', function () {
+    return view('pages.agency');
+})->name('agency');

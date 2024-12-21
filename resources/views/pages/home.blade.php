@@ -1,7 +1,7 @@
 @extends('layouts.app')
 <style>
   .bg {
-    background-image: url('{{ asset(' images/background.png') }}');
+    background-image: url('{{ asset('images/background.png') }}');
   }
 </style>
 @section('title', 'Home')
@@ -14,10 +14,10 @@
       <div class="flex flex-col  justify- w-max items-start mx-20 ">
         <p class="text-[#427EBD] font-bold  text-3xl md:text-6xl leading-none"> <span class="text-red-500">C</span>RYO
         </p>
-        <p class="text-[#427EBD] font-bold text-3xl md:text-5xl"> <span class="text-red-500">S</span>ERVICES</p>
+        <p class="text-[#427EBD] font-bold text-3xl md:text-6xl"> <span class="text-red-500">S</span>ERVICES</p>
         <p class="text-[#427EBD] font-bold text-3xl md:text-6xl"><span class="text-red-500">I</span>NDONESIA</p>
 
-        <p class="ml-24 text-[#427EBD] font-bold text-end text-md">Independent Cryogenic <span><br></span> Partner for
+        <p class="ml-24 text-[#427EBD] font-bold text-end text-xl">Independent Cryogenic <span><br></span> Partner for
           Indonesia</p>
       </div>
 
@@ -32,18 +32,26 @@
 
 <section class="h-fit flex justify-center items-center p-4 sm:p-20">
   <div class="bg-[#427EBD] text-white p-10 rounded-md flex flex-col lg:flex-row items-start justify-evenly">
-    <div class="grid grid-cols-2 gap-4 p-4 lg:w-1/2">
+   <div>
+
+   </div>
+  <div class="grid grid-cols-2 gap-4 p-4 lg:w-1/2">
       <!-- Gambar pertama (besar, vertikal) -->
       <div class="row-span-2">
         <img src="{{ asset('images/image (5).png') }}" alt="Image 1" class="w-full h-full object-cover rounded-lg shadow-md" />
       </div>
 
       <!-- Gambar kedua -->
-      <div class="flex flex-col gap-4 h-72 justify-between">
+      <div class="flex flex-col row-span-2 gap-4 h-full justify-between">
         <img src="{{ asset('images/image (4).png') }}" alt="Image 2" class="h-full w-full object-cover rounded-lg shadow-md" />
         <img src="{{ asset('images/image (3).png') }}" alt="Image 3" class="w-full h-full object-cover rounded-lg shadow-md" />
       </div>
+
+
+
     </div>
+
+   
 
     <div class="w-full lg:w-1/3">
       <h1 class="font-bold text-5xl">Company Profile</h1>
@@ -97,45 +105,24 @@
   </div>
 </section>
 
-<section id="mission" class="mx-5 md:mx-10 xl:mx-20 mt-32">
-  <h1 data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000"
-    class="text-3xl md:text-5xl mt-10 font-light text-[#427EBD]">Main Focus/Mission Statement</h1>
-
-  <div data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000"
-    class="flex flex-col md:flex-row items-start mt-10 gap-16 md:gap-20 lg:gap-32">
-    <!-- Kolom 1 -->
-    <div class="flex gap-4 items-start">
-      <p class="text-[50px] md:text-[100px] text-[#427EBD] leading-none">1</p>
-      <p class="text-[18px] md:text-[22px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-        efficitur, lectus et facilisis placerat.</p>
-    </div>
-
-    <!-- Kolom 2 -->
-    <div class="flex gap-4 items-start">
-      <p class="text-[50px] md:text-[100px] text-[#427EBD] leading-none">2</p>
-      <p class="text-[18px] md:text-[22px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-        efficitur, lectus et facilisis placerat.</p>
-    </div>
-  </div>
-</section>
 
 
-
-<section id="ourproject" class="my-10 flex-col mx-5 md:mx-20 items mt-32">
+<section id="ourproject" class="my-10 flex-col mx-5 px- md:mx-20 items mt-32">
   <h1 data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000"
     class="text-3xl md:text-5xl mt-10 font-light text-[#BDBDBD]">Our Projects</h1>
 
-  <div class="mt-2 md:mt-10 grid grid-cols-1 md:grid-cols-4 gap-10 ">
+  <div class="mt-2 md:mt-10 grid grid-cols-1 md:grid-cols-4 gap-10">
     <!-- Project 1 -->
     <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="800"
-      class="relative bg-[#427EBD] col-span-1 md:col-span-2">
+      class="relative bg-[#427EBD] col-span-1 md:col-span-2 group transition duration-300 hover:shadow-xl hover:scale-105">
       <div class="absolute inset-0">
-        <img src="{{ asset('images/project (1).png') }}" alt="" class="w-full h-full object-cover opacity-30" />
+        <img src="{{ asset('images/our-project/project 1.png') }}" alt=""
+          class="w-full h-full object-cover opacity-30 group-hover:opacity-50 transition duration-300" />
       </div>
       <div class="absolute flex flex-col mt-20 justify-start mx-10 w-[100px]">
         <p class="text-white text-3xl md:text-5xl font-bold">Sample Project</p>
         <div class="w-max mt-4 flex gap-2">
-          <p class="text-white font-light">View Project</p>
+          <p class="text-white font-light group-hover:underline">View Project</p>
           <img src="{{ asset('images/arrow-white.png') }}" alt="">
         </div>
       </div>
@@ -143,92 +130,42 @@
 
     <!-- Project 2 -->
     <div data-aos="fade-down" data-aos-delay="500" data-aos-duration="800"
-      class="col-span-1 md:col-span-2 w-full h-[250px] md:h-[300px]">
-      <img src="{{ asset('images/project (2).png') }}" alt="" class="w-full h-full object-cover opacity-70" />
+      class="col-span-1 md:col-span-2 w-full h-[250px] md:h-[300px] group transition duration-300 hover:shadow-xl hover:scale-105">
+      <img src="{{ asset('images/our-project/project 2.png') }}" alt=""
+        class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition duration-300" />
     </div>
 
     <!-- Project 3 -->
     <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"
-      class="bg-slate-400 w-full h-[250px] md:h-[300px]">
-      <img class="w-full h-full" src="{{ asset('images/project (3).png') }}" alt="">
+      class="bg-slate-400 w-full h-[250px] md:h-[300px] group transition duration-300 hover:shadow-xl hover:scale-105">
+      <img class="w-full h-full object-cover group-hover:opacity-90 transition duration-300"
+        src="{{ asset('images/our-project/project 3.png') }}" alt="">
     </div>
 
     <!-- Project 4 -->
     <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"
-      class="bg-slate-500 w-full h-[250px] md:h-[300px] col-span-1 md:col-span-2">
-      <img class="w-full h-full" src="{{ asset('images/project (4).png') }}" alt="">
+      class="bg-slate-500 w-full h-[250px] md:h-[300px] col-span-1 md:col-span-2 group transition duration-300 hover:shadow-xl hover:scale-105">
+      <img class="w-full h-full object-cover group-hover:opacity-90 transition duration-300"
+        src="{{ asset('images/our-project/project 4.png') }}" alt="">
     </div>
 
     <!-- Project 5 -->
     <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"
-      class="bg-slate-400 w-full h-[250px] md:h-[300px]">
-      <img class="w-full h-full" src="{{ asset('images/project (5).png') }}" alt="">
+      class="bg-slate-400 w-full h-[250px] md:h-[300px] group transition duration-300 hover:shadow-xl hover:scale-105">
+      <img class="w-full h-full object-cover group-hover:opacity-90 transition duration-300"
+        src="{{ asset('images/our-project/project 5.png') }}" alt="">
     </div>
-
-
   </div>
 
   <!-- All Projects Button -->
-  <div class="px-10 w-max mt-4 flex  md:float-end bg-[#427EBD]  p-4">
+  <div
+    class="px-10 w-max mt-4 flex md:float-end bg-[#427EBD] p-4 transition duration-300 hover:bg-[#355c90] hover:scale-105">
     <p class="text-white font-light">All Projects</p>
     <img src="{{ asset('images/arrow-white.png') }}" alt="">
   </div>
 </section>
 
-<section id="contact" class="mx-5 md:mx-20  my-10 md:my-32">
-  <h1 data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000"
-    class="text-3xl md:text-5xl mt-10 font-light text-[#BDBDBD] text-start">Contact Us</h1>
 
-  <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"
-    class="flex flex-col md:flex-row justify-center mt-2 md:mt-8 gap-4">
-    <!-- Kontainer Form -->
-    <div class="w-full md:w-1/3 rounded-lg">
-      <!-- Form -->
-      <form class="space-y-4">
-        <!-- Input Email -->
-        <div>
-          <input type="email" id="email"
-            class="w-full bg-[#F3F3F3] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 p-2.5"
-            placeholder="Name" required />
-        </div>
-        <!-- Input Phone -->
-        <div>
-          <input type="phone" id="phone"
-            class="w-full bg-[#F3F3F3] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 p-2.5"
-            placeholder="Phone Number" required />
-        </div>
-        <!-- Input Email -->
-        <div>
-          <input type="email" id="Email"
-            class="w-full bg-[#F3F3F3] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 p-2.5"
-            placeholder="Email" required />
-        </div>
-        <!-- Input Interest -->
-        <div>
-          <input type="text" id="interest"
-            class="w-full bg-[#F3F3F3] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 p-2.5"
-            placeholder="Interested in" required />
-        </div>
-        <!-- Input Text Area -->
-        <div>
-          <textarea id="message" rows="10"
-            class="w-full bg-[#F3F3F3] border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 p-2.5"
-            placeholder="Enter your message"></textarea>
-        </div>
-      </form>
-    </div>
 
-    <!-- Gambar -->
-    <div class="w-full md:w-2/3 bg-slate-100 mt-6 md:mt-0">
-      <img class="w-full" src="{{ asset('images/img-contact.png') }}" alt="">
-    </div>
-  </div>
-
-  <!-- Tombol Kirim Email -->
-  <div class="px-10 w-max mt-4 flex gap-2 bg-[#427ebd]  p-4 ">
-    <p class="text-white font-light uppercase">Send Email</p>
-    <img src="{{ asset('images/arrow-white.png') }}" alt="">
-  </div>
-</section>
 
 @endsection

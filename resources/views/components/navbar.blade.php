@@ -1,27 +1,28 @@
 <nav class="text-white max-sm:mb-20 fixed z-50 bg-white w-full">
     <div
-        class="md:gap-10 lg:gap-20 xl:gap-24 py-3 max-sm:hidden md:mx-10 lg:mx-15 xl:mx-20 flex justify-start items-center">
+        class="md:gap-10 lg:gap-20 xl:gap-24 py-3 max-sm:hidden md:mx-6 lg:mx-8 xl:mx-10 flex justify-between items-center">
         <!-- Logo -->
         <div class="w-[30%]">
             <img src="{{ asset('images/CSI 1.png') }}" alt="">
         </div>
 
         <!-- Links -->
-        <div class="w-[60%] flex justify-start items-center">
-            <ul class="flex lg:space-x-5 xl:space-x-20">
+        <div class="w-[70%] flex justify-end items-end">
+            <ul class="flex justify-end lg:space-x-5 xl:space-x-10">
                 @php
                     $navItems = [
                         ['name' => 'Home', 'route' => route('home')],
-                        ['name' => 'Gallery', 'route' => route('gallery')],
-                        ['name' => 'Projects', 'route' => route('projects')],
                         ['name' => 'services', 'route' => route('services')],
+                        ['name' => 'Projects', 'route' => route('projects')],
+                        ['name' => 'Gallery', 'route' => route('gallery')],
+                        ['name' => 'Agency', 'route' => route('agency')],
                         ['name' => 'contact', 'route' => route('contact')],
                     ];
                     $currentRoute = request()->url(); // URL saat ini
                 @endphp
 
                 @foreach ($navItems as $item)
-                    <li class="px-4 relative group">
+                    <li class="px-4 font-semibold relative group">
                         <a href="{{ $item['route'] }}"
                             class="py-5 px-2 uppercase 
                                         {{ $currentRoute === $item['route'] ? 'border-y-2 px-4 border-[#427EBD] text-[#427EBD]' : 'text-[#427EBD]' }}">

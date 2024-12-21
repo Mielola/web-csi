@@ -2,7 +2,7 @@
 
 @section('title', 'Services')
 @section('content')
-<section id="services" class="my-10 mx-5 md:mx-20 items px-5 md:px-20">
+<section id="services" class="mt-10 mx-5 md:mx-20 items px-5 md:px-20">
 
     <!-- Judul -->
     <div class="flex flex-col items-start md:items-start my-4 mt-20 leading-none">
@@ -10,7 +10,7 @@
         <p class="text-4xl md:text-5xl font-bold text-[#427ebd]">services</p>
     </div>
 
-    <div class="h-fit flex flex-col gap-10 py-8 mb-96">
+    <div class="h-fit flex flex-col gap-10 py-8 mb-10">
         <!--Card 1 -->
         <div class="card flex flex-col lg:flex-row bg-neutral-200 justify-between">
             <div class="sm:px-14 px-5 py-8 h-full flex flex-col justify-between order-2 lg:order-1">
@@ -21,10 +21,10 @@
                         <li>Liquid cryogenic and vacuum pump repair</li>
                     </ul>
                 </div>
-                <div class="w-max mt-4 bg-[#427EBD] flex p-4 gap-4 items-center">
+                <div class="w-max mt-4 bg-[#427EBD] flex p-4 gap-2 items-center">
 
-                    <p class="text-white font-light">Read More</p>
-                    <img class="h-4 md:h-auto" src="{{ asset('images/arrow.svg') }}" alt="">
+                    <p class="text-white font-light">View More</p>
+                    <img class="h-4 mt-1 md:h-auto" src="{{ asset('images/arrow-white.svg') }}" alt="">
                 </div>
 
             </div>
@@ -45,10 +45,10 @@
                         <li>Rack and cradles</li>
                     </ul>
                 </div>
-                <div class="w-max mt-4 bg-[#427EBD] flex p-4 gap-4 items-center">
+                <div class="w-max mt-4 bg-[#427EBD] flex p-4 gap-2 items-center">
 
-                    <p class="text-white font-light">Read More</p>
-                    <img class="h-4 md:h-auto" src="{{ asset('images/arrow.svg') }}" alt="">
+                    <p class="text-white font-light">View More</p>
+                    <img class="h-4 md:h-auto mt-1" src="{{ asset('images/arrow-white.svg') }}" alt="">
                 </div>
 
             </div>
@@ -67,8 +67,8 @@
                 </div>
                 <div class="w-max mt-4 bg-[#427EBD] flex p-4 gap-4 items-center">
 
-                    <p class="text-white font-light">Read More</p>
-                    <img class="h-4 md:h-auto" src="{{ asset('images/arrow.svg') }}" alt="">
+                    <p class="text-white font-light">View More</p>
+                    <img class="h-4 md:h-auto" src="{{ asset('images/arrow-white.svg') }}" alt="">
                 </div>
 
             </div>
@@ -87,8 +87,8 @@
                 </div>
                 <div class="w-max mt-4 bg-[#427EBD] flex p-4 gap-4 items-center">
 
-                    <p class="text-white font-light">Read More</p>
-                    <img class="h-4 md:h-auto" src="{{ asset('images/arrow.svg') }}" alt="">
+                    <p class="text-white font-light">View More</p>
+                    <img class="h-4 md:h-auto" src="{{ asset('images/arrow-white.svg') }}" alt="">
                 </div>
 
             </div>
@@ -105,10 +105,10 @@
                         <li>T75 Periodic & CSC Inspection (Bureau Veritas)</li>
                     </ul>
                 </div>
-                <div class="w-max mt-4 bg-[#427EBD] flex p-4 gap-4 items-center">
+                <div class="w-max mt-4 bg-[#427EBD] flex p-4 gap-2 items-center">
 
-                    <p class="text-white font-light">Read More</p>
-                    <img class="h-4 md:h-auto" src="{{ asset('images/arrow.svg') }}" alt="">
+                    <p class="text-white font-light">View More</p>
+                    <img class="h-4 md:h-auto mt-1" src="{{ asset('images/arrow-white.svg') }}" alt="">
                 </div>
 
             </div>

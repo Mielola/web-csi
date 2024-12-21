@@ -2,48 +2,42 @@
 
 @section('title', 'Contact')
 @section('content')
-<section id="contact" class="my-10 mx-5 md:mx-10 lg:mx-20 items">
+<section id="contact" class=" mx-5 pt-4 md:mx-10 my-10 lg:mx-20 items">
 
-<div class="flex flex-col md:flex-row gap-4 md:gap-10 mt-10 px-4 md:px-10 lg:px-20 items-start">
-    <!-- Address Section -->
-    <div  data-aos="fade-up"
-    data-aos-delay="500"
-    data-aos-duration="1000"
-     class="w-full md:w-1/3 flex flex-col gap-4">
-        <div class="flex my-4 flex-col leading-none">
-            <p class="text-3xl lg:text-5xl font-light text-[#BDBDBD]">Contact</p>
-            <p class="text-3xl lg:text-5xl font-bold text-[#427ebd]">Information</p>
+    <div class="flex flex-col md:flex-row gap-4 md:gap-10 mt-10 items-start">
+        <!-- Address Section -->
+        <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"
+            class="w-full md:w-1/3 flex flex-col gap-4">
+            <div class="flex my-4 flex-col leading-none">
+                <p class="text-3xl lg:text-5xl font-light text-[#BDBDBD]">Contact</p>
+                <p class="text-3xl lg:text-5xl font-bold text-[#427ebd]">Information</p>
+            </div>
+
+            <div class="flex flex-col gap-4 text-sm md:text-base">
+                <p>
+                    <span class="font-bold text-[#427ebd]">PT. Cryo Services Indonesia</span><br />
+                    Jl. Raya Narogong No.Km 12, Cikiwul,<br />
+                    Kec. Bantar Gebang, Kota Bks,<br />
+                    Jawa Barat 17152
+                </p>
+                <p class="font-bold text-[#427ebd]">(+6221) 82595934</p>
+                <p>info@csicryoservices.com</p>
+            </div>
+
+            <!-- Button to trigger modal -->
+            <div class="flex bg-[#427ebd] my-8 text-white p-4 w-max cursor-pointer" id="messageButton">
+                <p>Message us</p>
+            </div>
         </div>
 
-        <div class="flex flex-col gap-4 text-sm md:text-base">
-            <p>
-                <span class="font-bold text-[#427ebd]">PT. Cryo Services Indonesia</span><br />
-                Jl. Raya Narogong No.Km 12, Cikiwul,<br />
-                Kec. Bantar Gebang, Kota Bks,<br />
-                Jawa Barat 17152
-            </p>
-            <p class="font-bold text-[#427ebd]">(+6221) 82595934</p>
-            <p>info@csicryoservices.com</p>
-        </div>
-
-        <!-- Button to trigger modal -->
-        <div class="flex bg-[#427ebd] my-8 text-white p-4 w-max cursor-pointer" id="messageButton">
-            <p>Message us</p>
+        <!-- Google Map Embed Section -->
+        <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" class="w-full md:w-2/3 item-self-end">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4761.380338168111!2d106.9764994011626!3d-6.333422880469831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69924b1eda5911%3A0x4a56ba2771dbabd0!2sJl.%20Raya%20Narogong%20No.km.12%2C%20RT.005%2FRW.001%2C%20Cikiwul%2C%20Kec.%20Bantar%20Gebang%2C%20Kota%20Bks%2C%20Jawa%20Barat%2017152!5e0!3m2!1sid!2sid!4v1733123678072!5m2!1sid!2sid"
+                class="w-full h-[300px] md:h-[450px]" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
-
-     <!-- Google Map Embed Section -->
-     <div 
-     data-aos="fade-left"
-    data-aos-delay="500"
-    data-aos-duration="1000"
-    class="w-full md:w-2/3">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4761.380338168111!2d106.9764994011626!3d-6.333422880469831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69924b1eda5911%3A0x4a56ba2771dbabd0!2sJl.%20Raya%20Narogong%20No.km.12%2C%20RT.005%2FRW.001%2C%20Cikiwul%2C%20Kec.%20Bantar%20Gebang%2C%20Kota%20Bks%2C%20Jawa%20Barat%2017152!5e0!3m2!1sid!2sid!4v1733123678072!5m2!1sid!2sid"
-            class="w-full h-[300px] md:h-[450px]" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-</div>
 
     <!-- Modal Section -->
     <div id="messageModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
@@ -89,6 +83,97 @@
                 class="bg-[#427ebd] text-white px-4 py-2 rounded-md mt-4 w-full">Close</button>
         </div>
     </div>
+
+</section>
+
+<section id="contact" class="flex flex-col gap-8 mx-5 pt-4 md:mx-10 my-10 lg:mx-20 items">
+    <div class="flex my-4 flex-col leading-none">
+        <p class="text-3xl lg:text-5xl font-light text-[#BDBDBD]">Contact</p>
+        <p class="text-3xl lg:text-5xl font-bold text-[#427ebd]">Information</p>
+    </div>
+
+    <div class="flex flex-col md:flex-row w-full gap-10">
+        <div class="flex flex-col w-full lg:w-1/2">
+
+            <div class="flex flex-row my-10 w-full gap-20 lg:gap-40 font-semibold">
+                <div>
+                    <p class="text-2xl font-bold text-[#427ebd]">Facilite</p>
+                </div>
+
+                <div>
+                    <ul class="list-disc text-[#717171] font-semibold">
+
+                        <li>5 Management & Engineers</li>
+                        <li>4 Skilled Technicians</li>
+                        <li>6 Welders (Permanent And Sub-Contractor)</li>
+                        <li>2 Admin Staffs</li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-row my-10 w-full gap-20 lg:gap-40  font-semibold">
+                <div>
+                    <p class="text-2xl font-bold text-[#427ebd]">Facilite</p>
+
+                </div>
+
+                <div>
+                    <ul class="list-disc text-[#717171] font-semibold">
+
+                        <li>5 Management & Engineers</li>
+                        <li>4 Skilled Technicians</li>
+                        <li>6 Welders (Permanent And Sub-Contractor)</li>
+                        <li>2 Admin Staffs</li>
+
+
+                    </ul>
+                </div>
+
+
+
+            </div>
+
+            <div class="flex flex-row my-10 w-full gap-20 lg:gap-40  font-semibold">
+                <div>
+                    <p class="text-2xl font-bold text-[#427ebd]">Facilite</p>
+
+                </div>
+
+                <div>
+                    <ul class="list-disc text-[#717171] font-semibold">
+
+                    <li>4 Helium Leak Detector Units</li>
+  <li>25 Vacuum Pump Units With Varying Sizes</li>
+  <li>6 Heater Units</li>
+
+
+                    </ul>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+        <div class="flex px-5 h-auto md:h-[300px] flex-col gap-8 w-full lg:w-1/2">
+            <img class="h-[250px] w-full object-cover" src="{{ asset('images/contact/image 1.png') }}" alt="">
+            <img class="h-[250px] w-full object-cover" src="{{ asset('images/contact/image 2.png') }}" alt="">
+
+
+        </div>
+
+        
+
+    </div>
+
+    <div class="flex justify-center w-full mt-10 px-36 py-10">
+        <img class="w-full h-full object-cover" src="{{ asset('images/contact/image 3.png') }}" alt="">
+        </div>
+
 
 </section>
 
